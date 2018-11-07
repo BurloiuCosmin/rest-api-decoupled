@@ -1,14 +1,5 @@
 <?php
 
-/*
-* Plugin Name:       init
-* Description:       A brief description2
-* Author URI:        https://infinum.co/
- * License:           GPL-2.0+
- * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
- * Text Domain:       json-transient
-*/
-
 namespace Json_Transient;
 
 // If this file is called directly, abort.
@@ -154,5 +145,6 @@ class Init {
 }
 
 $init = new Init();
+var_dump($init);
 
 add_action( 'save_post', [ $init, 'update_page_transient' ] );
